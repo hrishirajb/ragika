@@ -1,0 +1,15 @@
+{
+  "name": "ragika",
+  "private": true,
+  "version": "0.1.0",
+  "description": "RAGIKA monorepo containing API and web client",
+  "workspaces": [
+    "services/api",
+    "apps/web",
+    "packages/shared"
+  ],
+  "scripts": {
+    "build": "npm run build -w services/api && npm run build -w apps/web",
+    "dev": "npm run dev -w services/api & npm run dev -w apps/web"
+  }
+}
